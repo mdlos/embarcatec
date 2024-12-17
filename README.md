@@ -19,9 +19,10 @@ Este projeto é a primeira atividade em grupo passada pelo Embarcatec. Segue o e
 
 ## 🛠 Tecnologias
 
-**1. Git e Github**;
-**2. VScode**;
-**3. Linguagem C**;
+1. **Git e Github**;
+2. **VScode**;
+3. **Linguagem C**;
+
 
 ## 💻 Desenvolvedores
  
