@@ -1,11 +1,6 @@
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=02A6F4&height=120&section=header"/>
-
-<h4 align="center">Embarcatec | Primeira Atividade Em Grupo</h4>
- 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=052A76&size=35&center=true&vCenter=true&width=1000&lines=Uma+plataforma+intuitiva+e+poderosa;Projetada+para+tornar+suas+enquetes+e+votações;Uma+experiência+fácil,+envolvente+e+significativa.)](https://git.io/typing-svg)
-
-##
+<h1 align="center">Embarcatec | Primeira Atividade Em Grupo</h1>
 
 <div align="center">  
   <img width=40% src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=02A6F4&style=for-the-badge"/>
@@ -24,9 +19,9 @@ Este projeto é a primeira atividade em grupo passada pelo Embarcatec. Segue o e
 
 ## 🛠 Tecnologias
 
-*1. Git e Github*
-*2. VScode*
-*3. Linguagem C*
+**1. Git e Github**;
+**2. VScode**;
+**3. Linguagem C**;
 
 ## 💻 Desenvolvedores
  
