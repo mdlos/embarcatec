@@ -6,6 +6,7 @@
 //           Paola
 //           Pedro
 //           Jvrsoare
+//           João Paulo S. Brito
 
 #include <stdio.h>
 
@@ -18,6 +19,7 @@ void converterPotencia();
 void converterArea();
 void converterTempo();
 void sairMensagem();
+void converterTamanhoDados();
 
 int main() {
     int opcao;
@@ -33,7 +35,8 @@ int main() {
         printf("6. Potência\n");
         printf("7. Área\n");
         printf("8. Tempo\n");
-        printf("9. Sair\n");
+        printf("9. Tamanho de Dados\n");
+        printf("10. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &opcao);
 
@@ -46,7 +49,8 @@ int main() {
             case 6: converterPotencia(); break;
             case 7: converterArea(); break;
             case 8: converterTempo(); break;
-            case 9: sairMensagem(); break;
+            case 9: converterTamanhoDados(); break;
+            case 10: sairMensagem(); break;
             default: printf("Opção inválida! Tente novamente.\n");
         }
     } while (opcao != 9);
@@ -227,6 +231,42 @@ void converterTempo() {
     printf("Resultado: %.2lf %c\n", resultado, unidade_destino);
 }
 
+void converterTamanhoDados() {
+    double valor;
+    int opcao;
+    
+    printf("\n--- Conversor de Unidades de Dados ---\n");
+    printf("1. Bits para Bytes\n");
+    printf("2. Bytes para Bits\n");
+    printf("3. Bytes para Kilobytes\n");
+    printf("4. Kilobytes para Bytes\n");
+    printf("5. Kilobytes para Megabytes\n");
+    printf("6. Megabytes para Kilobytes\n");
+    printf("7. Megabytes para Gigabytes\n");
+    printf("8. Gigabytes para Megabytes\n");
+    printf("9. Gigabytes para Terabytes\n");
+    printf("10. Terabytes para Gigabytes\n");
+    printf("Escolha uma opção: ");
+    scanf("%d", &opcao);
+
+    printf("Digite o valor: ");
+    scanf("%lf", &valor);
+
+    switch (opcao) {
+        case 1: printf("%.2lf bits = %.2lf bytes\n", valor, valor / 8); break;
+        case 2: printf("%.2lf bytes = %.2lf bits\n", valor, valor * 8); break;
+        case 3: printf("%.2lf bytes = %.2lf kilobytes\n", valor, valor / 1024); break;
+        case 4: printf("%.2lf kilobytes = %.2lf bytes\n", valor, valor * 1024); break;
+        case 5: printf("%.2lf kilobytes = %.2lf megabytes\n", valor, valor / 1024); break;
+        case 6: printf("%.2lf megabytes = %.2lf kilobytes\n", valor, valor * 1024); break;
+        case 7: printf("%.2lf megabytes = %.2lf gigabytes\n", valor, valor / 1024); break;
+        case 8: printf("%.2lf gigabytes = %.2lf megabytes\n", valor, valor * 1024); break;
+        case 9: printf("%.2lf gigabytes = %.2lf terabytes\n", valor, valor / 1024); break;
+        case 10: printf("%.2lf terabytes = %.2lf gigabytes\n", valor, valor * 1024); break;
+        default: printf("Opção inválida!\n");
+    }
+}
+
 void sairMensagem() {
     printf("  _________        .---\"\"\"      \"\"\"---.               \n");
     printf(" :______.-':      :  .--------------.  :              \n");
@@ -242,6 +282,7 @@ void sairMensagem() {
     printf(" |:_____:  |     | - Paola                    |       \n");
     printf(" |:_____:  |     | - Pedro                    |       \n");
     printf(" |:_____:  |     | - Jvrsoare                 |       \n");
+    printf(" |:_____:  |     | - Joao Paulo S. Brito      |       \n");
     printf(" |    ==   |                                        \n");
     printf(" |       O |      Obrigado por utilizar!             \n");
     printf(" |       o |-._.-i___/'             \\._              \n");
