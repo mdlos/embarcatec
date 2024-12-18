@@ -1,7 +1,7 @@
 //Embarcatec 
 //Atividade: 
 //Discentes: Márcio de Arruda Fonseca
-//           Alex
+//           Alexsami
 //           Sara 
 //           Paola
 //           Pedro
@@ -237,7 +237,7 @@ void sairMensagem() {
     printf(" |         |      :'---...______...---'               \n");
     printf(" |:_____:  |     |     Equipe:                |        \n");
     printf(" |:_____:  |     | - Marcio                   |       \n");
-    printf(" |:_____:  |     | - Alex                     |       \n");
+    printf(" |:_____:  |     | - Alexsami                 |       \n");
     printf(" |:_____:  |     | - Sara                     |       \n");
     printf(" |:_____:  |     | - Paola                    |       \n");
     printf(" |:_____:  |     | - Pedro                    |       \n");
