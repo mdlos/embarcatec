@@ -29,11 +29,13 @@ Este projeto é a primeira atividade em grupo passada pelo Embarcatec. Segue o e
 <table>
   <tr>
     <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/72825281?v=4" width="100px;" alt=""/><br /><sub><b> Marcio Fonseca </b></sub></a><br />👨‍💻</a></td>
-    <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/191687774?v=4" width="100px;" alt=""/><br /><sub><b> jvrsoaress </b></sub></a><br />👨‍💻</a></td>
+    <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/191687774?v=4" width="100px;" alt=""/><br /><sub><b> José Vinicius </b></sub></a><br />👨‍💻</a></td>
     <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/164667970?v=4" width="100px;" alt=""/><br /><sub><b> Pedro Barros
     </b></sub></a><br />👨‍💻</a></td>
     <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/124692269?v=4" width="100px;" alt=""/><br /><sub><b> Paola Fagundes </b></sub></a><br />👨‍💻</a></td>
     <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/143294885?v=4" width="100px;" alt=""/><br /><sub><b> Sara Souza </b></sub></a><br />👨‍💻</a></td>
+<td align="center"><img style="" src="https://avatars.githubusercontent.com/u/135754687?v=4" width="100px;" alt=""/><br /><sub><b> João Paulo </b></sub></a><br />👨‍💻</a></td>
+<td align="center"><img style="" src="https://avatars.githubusercontent.com/u/96251377?v=4" width="100px;" alt=""/><br /><sub><b> Moises Amorim </b></sub></a><br />👨‍💻</a></td>
   </tr>
 </table>
 
