@@ -1,8 +1,17 @@
 //Embarcatec 
 //Atividade: 
-//Discentes: Márcio de Arruda Fonseca.
+//Discentes: Márcio de Arruda Fonseca
+//           João Paulo
+//           Sara 
+//           Paola
+//           Pedro
+//           Jvrsoare
+//           Alexsami
+//           Moises Amorim
 
 #include <stdio.h>
+#include <math.h>
+#include <gtk/gtk.h>
 
 void converterComprimento();
 void converterMassa();
@@ -12,7 +21,9 @@ void converterVelocidade();
 void converterPotencia();
 void converterArea();
 void converterTempo();
+void converterDados();
 void sairMensagem();
+void exibirResultado(double valor);
 
 int main() {
     int opcao;
@@ -28,7 +39,8 @@ int main() {
         printf("6. Potência\n");
         printf("7. Área\n");
         printf("8. Tempo\n");
-        printf("9. Sair\n");
+        printf("9. Dados\n");
+        printf("10. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &opcao);
 
@@ -41,10 +53,11 @@ int main() {
             case 6: converterPotencia(); break;
             case 7: converterArea(); break;
             case 8: converterTempo(); break;
-            case 9: sairMensagem(); break;
+            case 9: converterDados(); break;
+            case 10: sairMensagem(); break;
             default: printf("Opção inválida! Tente novamente.\n");
         }
-    } while (opcao != 9);
+    } while (opcao != 10);
 
     return 0;
 }
@@ -222,6 +235,77 @@ void converterTempo() {
     printf("Resultado: %.2lf %c\n", resultado, unidade_destino);
 }
 
+void exibirResultado(double valor) {
+    if (valor == (int)valor) {
+        printf("%.0lf", valor);
+    } else {
+        int precisao = 0;
+        double temp = valor;
+
+        while (temp != (int)temp && precisao < 15) {
+            temp *= 10;
+            precisao++;
+        }
+
+        printf("%.*lf", precisao, valor);
+    }
+}
+
+void converterDados() {
+    double valor;
+    int opcaoEntrada, opcaoSaida;
+
+    printf("\n--- Conversor de Dados ---\n");
+    printf("Unidades disponíveis:\n");
+    printf("1. Bits\n");
+    printf("2. Bytes\n");
+    printf("3. Kilobytes (KB)\n");
+    printf("4. Megabytes (MB)\n");
+    printf("5. Gigabytes (GB)\n");
+    printf("6. Terabytes (TB)\n");
+
+    printf("\nEscolha a unidade de entrada: ");
+    scanf("%d", &opcaoEntrada);
+
+    printf("Digite o valor: ");
+    scanf("%lf", &valor);
+
+    printf("Escolha a unidade de saída: ");
+    scanf("%d", &opcaoSaida);
+
+    // Conversão para bits como unidade base
+    double emBits;
+    switch (opcaoEntrada) {
+        case 1: emBits = valor; break;               // Bits
+        case 2: emBits = valor * 8; break;          // Bytes
+        case 3: emBits = valor * 8 * 1024; break;   // KB
+        case 4: emBits = valor * 8 * pow(1024, 2); break; // MB
+        case 5: emBits = valor * 8 * pow(1024, 3); break; // GB
+        case 6: emBits = valor * 8 * pow(1024, 4); break; // TB
+        default: printf("Unidade de entrada inválida!\n"); return;
+    }
+
+    // Conversão de bits para a unidade de saída
+    double resultado;
+    switch (opcaoSaida) {
+        case 1: resultado = emBits; break;                 // Bits
+        case 2: resultado = emBits / 8; break;            // Bytes
+        case 3: resultado = emBits / (8 * 1024); break;   // KB
+        case 4: resultado = emBits / (8 * pow(1024, 2)); break; // MB
+        case 5: resultado = emBits / (8 * pow(1024, 3)); break; // GB
+        case 6: resultado = emBits / (8 * pow(1024, 4)); break; // TB
+        default: printf("Unidade de saída inválida!\n"); return;
+    }
+
+    // Exibir o resultado
+    printf("\n");
+    exibirResultado(valor);
+    printf(" na unidade escolhida equivale a ");
+    exibirResultado(resultado);
+    printf(" na unidade de saída.\n");
+}
+
+
 void sairMensagem() {
     printf("  _________        .---\"\"\"      \"\"\"---.               \n");
     printf(" :______.-':      :  .--------------.  :              \n");
@@ -232,11 +316,13 @@ void sairMensagem() {
     printf(" |         |      :'---...______...---'               \n");
     printf(" |:_____:  |     |     Equipe:                |        \n");
     printf(" |:_____:  |     | - Marcio                   |       \n");
-    printf(" |:_____:  |     | - Alex                     |       \n");
+    printf(" |:_____:  |     | - João Paulo                |       \n");
     printf(" |:_____:  |     | - Sara                     |       \n");
     printf(" |:_____:  |     | - Paola                    |       \n");
     printf(" |:_____:  |     | - Pedro                    |       \n");
     printf(" |:_____:  |     | - Jvrsoare                 |       \n");
+    printf(" |:_____:  |     | - Alexsami                 |       \n");
+    printf(" |:_____:  |     | - Moises                 |       \n");
     printf(" |    ==   |                                        \n");
     printf(" |       O |      Obrigado por utilizar!             \n");
     printf(" |       o |-._.-i___/'             \\._              \n");
