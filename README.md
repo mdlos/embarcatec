@@ -9,6 +9,7 @@
 <div align="center">
  <a href="#-sobre-o-projeto"> Sobre</a> • 
  <a href="#-tecnologias"> Tecnologias</a> • 
+ <a href="#-instalacao"> Instalação</a> • 
  <a href="#-desenvolvedores"> Desenvolvedores</a>
 </div>
 
@@ -22,6 +23,23 @@ Este projeto é a primeira atividade em grupo passada pelo Embarcatec. Segue o e
 1. **Git e Github**;
 2. **VScode**;
 3. **Linguagem C**;
+
+## 👨‍💻 Instalação
+
+| Systema  | Local padrão da pasta                       |
+| ------- | -------------------------------------------- |
+| Linux   | `~/./conversor`                              |
+| macOS   | `~/./conversor`                              |
+| Windows | `~\Documents\`                               |
+
+- Escolha uma das maneiras de instalar
+  - **GitHub**
+    - Clone o git `/home/` folder.
+  - **ZIP**
+    - Desacompactar o arquivo Zip em sua pasta padrão.
+- Compilar o arquivo conversor.c no linux com o comando gcc -o conversor conversor.c pkg-config --cflags --libs gtk+-3.0.
+- No Windows rodar o executável conversor.exe.
+- No Linux usar os comando chmod 775 conversor e para rodar ./conversor.
 
 
 ## 💻 Desenvolvedores
