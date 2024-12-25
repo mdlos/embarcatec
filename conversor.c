@@ -136,18 +136,46 @@ void converterTemperatura() {
     int opcao;
     printf("\n--- Conversor de Temperatura ---\n");
     printf("1. Celsius para Fahrenheit\n");
-    printf("2. Fahrenheit para Celsius\n");
-    printf("3. Celsius para Kelvin\n");
+    printf("2. Celsius para Kelvin\n");
+    printf("3. Fahrenheit para Celsius\n");
+    printf("4. Fahrenheit para Kelvin\n");
+    printf("5. Kelvin para Celsius\n");
+    printf("6. Kelvin para Fahrenheit\n");
     printf("Escolha uma opção: ");
     scanf("%d", &opcao);
 
-    printf("Digite o valor: ");
-    scanf("%lf", &valor);
-
-    switch (opcao) {
-        case 1: printf("%.2lf C = %.2lf F\n", valor, (valor * 9/5) + 32); break;
-        case 2: printf("%.2lf F = %.2lf C\n", valor, (valor - 32) * 5/9); break;
-        case 3: printf("%.2lf C = %.2lf K\n", valor, valor + 273.15); break;
+    switch (opcao)
+    {
+    case 1:
+        printf("Digite o valor da temperatura em Celsius: ");
+        scanf("%lf", &valor);
+        printf("%.2lf C = %.2lf F\n", valor, (valor * 9 / 5) + 32);
+        break; // Formula: °F = °C × 1,8 + 32
+    case 2:
+        printf("Digite o valor da temperatura em Celsius: ");
+        scanf("%lf", &valor);
+        printf("%.2lf C = %.2lf K\n", valor, valor + 273.15);
+        break; // Formula: K = °C + 273,15
+    case 3:
+        printf("Digite o valor da temperatura em Fahrenheit: ");
+        scanf("%lf", &valor);
+        printf("%.2lf F = %.2lf C\n", valor, (valor - 32) * 5 / 9);
+        break; // Formula: °C = (°F - 32) / 1,8
+    case 4:
+        printf("Digite o valor da temperatura em Fahrenheit: ");
+        scanf("%lf", &valor); 
+        printf("%.2lf F = %.2lf K\n", valor, (valor + 459.67) / 1.8);
+        break; // Formula: (°F + 459,67) / 1,8
+    case 5:
+        printf("Digite o valor da temperatura em Kelvin: ");
+        scanf("%lf", &valor); 
+        printf("%.2lf K = %.2lf C\n", valor, valor - 273.15);
+        break; // Formula: °C = K - 273,15
+    case 6:
+        printf("Digite o valor da temperatura em Kelvin: ");
+        scanf("%lf", &valor); 
+        printf("%.2lf K = %.2lf F\n", valor, (valor * 1.8) - 459.67);
+        break; // Formula: °F = K × 1,8 - 459,67
         default: printf("Opção inválida!\n");
     }
 }
