@@ -55,6 +55,7 @@ Este projeto é a primeira atividade em grupo passada pelo Embarcatec. Segue o e
 <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/135754687?v=4" width="100px;" alt=""/><br /><sub><b> João Paulo </b></sub></a><br />👨‍💻</a></td>
 <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/96251377?v=4" width="100px;" alt=""/><br /><sub><b> Moises Amorim </b></sub></a><br />👨‍💻</a></td>
 <td align="center"><img style="" src="https://avatars.githubusercontent.com/u/103523809?v=4" width="100px;" alt=""/><br /><sub><b> Alexsami Lopes </b></sub></a><br />👨‍💻</a></td>
+<td align="center"><img style="" src="https://avatars.githubusercontent.com/u/60956248?v=4" width="100px;" alt=""/><br /><sub><b> Ramom Andrade </b></sub></a><br />👨‍💻</a></td>
   </tr>
 </table>
 
